@@ -1,0 +1,29 @@
+<div class="body grid wide">
+    <div class="content">
+        <div class="directional">          
+            <p>Điện thoại di động > xiaomi </p>
+        </div>
+
+        <h2>Điện thoại</h2>
+        
+        <div class="content-list">
+            {{#each phones}}
+            <div class="content-item">
+                <a href="/{{this.type}}/{{this.slug}}">
+                    <div>
+                        <img src="{{this.image}}" alt="{{this.name}}">
+                    </div>
+                </a>
+
+                <a href="/{{this.type}}/{{this.slug}}">
+                    <h2>{{this.name}}</h2>
+                </a>
+                <span class="price">{{this.price}}</span>
+                <button type="submit">MUA</button>
+                <p>Tặng: <span>Cường lực - Ốp lưng - Tai nghe</span> khi mua BHV (Nếu trong hộp</p>
+                <p>Giảm: <span>100K</span> áp dụng HSSV mua BHV tại <span>42 phố Vọng</span></p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

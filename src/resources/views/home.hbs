@@ -1,1 +1,144 @@
-<h1>home success</h1>
+<div id="slider">
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-black-shark-4s-mc.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-gt-neo2-mc.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-iphone-12-pro-mobilecity-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-k40-gaming-mobilecity-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-red-magic-6s-pro.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fadein">
+            <img src="../img/slider-img/banner-rog-phone-5s.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        {{!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> --}}
+    </div>
+
+    <div class="slider-right">
+        <div class="container-right">
+
+            <div class="container-right__iframe">
+                <iframe src="https://www.youtube.com/embed/j3ZuCEUzDzY?autoplay=1" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+            </div>
+
+                
+            <!-- Thumbnail images -->
+            <div class="sub-img">
+                <div class="sub-img-item" data-iframe="https://www.youtube.com/embed/j3ZuCEUzDzY?autoplay=1">
+                    <img class="lazy" data-original="https://img.youtube.com/vi/j3ZuCEUzDzY/2.jpg" alt="Video MobileCity" src="https://img.youtube.com/vi/j3ZuCEUzDzY/2.jpg" style="">
+                </div>
+                <div class="sub-img-item" data-iframe="https://www.youtube.com/embed/sfVem2aYjYE?autoplay=1">
+                    <img class="lazy" data-original="https://img.youtube.com/vi/sfVem2aYjYE/2.jpg" alt="Video MobileCity" src="https://img.youtube.com/vi/sfVem2aYjYE/2.jpg" style="">
+                </div>
+                <div class="sub-img-item" data-iframe="https://www.youtube.com/embed/jnExuFPGg_k?autoplay=1">
+                    <img class="lazy" data-original="https://img.youtube.com/vi/jnExuFPGg_k/2.jpg" alt="Video MobileCity" src="https://img.youtube.com/vi/jnExuFPGg_k/2.jpg" style="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body grid wide">
+    <div class="content">
+        <div class="directional">
+        <ul class="directional-list">
+            <li class="directional-item">Hãng :</li>
+            <li class="directional-item"><a href="/samsung">Samsung</a></li>
+            <li class="directional-item"><a href="/iphone">Iphone</a></li>
+            <li class="directional-item"><a href="/xiaomi">Xiaomi</a></li>
+        </ul>
+        </div>
+        <div class="content-list">
+            {{#each phones}}
+            <div class="content-item">
+                <a href="/{{this.type}}/{{this.slug}}">
+                    <div>
+                        <img src="{{this.image}}" alt="{{this.name}}">
+                    </div>
+                </a>
+
+                <a href="/{{this.type}}/{{this.slug}}">
+                    <h2>{{this.name}}</h2>
+                </a>
+                <span class="price">{{this.price}}</span>
+                <button type="submit">MUA</button>
+                <p>Tặng: <span>Cường lực - Ốp lưng - Tai nghe</span> khi mua BHV (Nếu trong hộp</p>
+                <p>Giảm: <span>100K</span> áp dụng HSSV mua BHV tại <span>42 phố Vọng</span></p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var slideIndex = 0;
+    {{!-- showSlides(slideIndex); --}}
+
+    // Next/previous controls
+    //function plusSlides(n) {
+    //showSlides(slideIndex += n);
+    //}
+
+    {{!-- function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+    } --}}
+
+    
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    // sub img item
+    const containerRight__iframe = document.querySelector('.container-right__iframe iframe')
+    const subImgItem = document.querySelectorAll('.sub-img-item')
+    let currentIndex = 0
+    function showVideo() {
+        containerRight__iframe.src = subImgItem[currentIndex].dataset.iframe
+    }
+
+    subImgItem.forEach((value,index) => {
+        value.addEventListener('click', () => {
+            currentIndex = index
+            showVideo()
+        })
+    })
+
+</script>

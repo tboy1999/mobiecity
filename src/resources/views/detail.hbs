@@ -1,0 +1,291 @@
+<div class="container grid wide">
+
+    {{!-- điều hướng --}}
+    <div class="directional">
+        <p>Điện thoại di động > {{phone.name}}</p>
+    </div>
+
+    <div class="name-product">
+        <h3>{{phone.name}}</h3>
+        <h4>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            (416 đánh giá)
+        </h4>
+    </div>
+    {{!-- thông tin sản phẩm --}}
+    <div class="product">
+        <div class="product-image">
+            <div class="product-image-item">
+                <img src="{{phone.image}}" alt="">
+            </div>
+            <div class="product-address">
+                <p>Danh Sách Cửa Hàng:</p>
+                <select>
+                    <option value="">Hà Nội</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">TP.HCM</option>
+                </select>
+                <ul class="product-address-list">
+                    <li class="product-address-item">1: Cửa hàng online <span class="product-still">(Còn hàng)</span></li>
+                    <li class="product-address-item">2: 120 Thái Hà, Q. Đống Đa <span class="product-still">(Còn hàng)</span></li>
+                    <li class="product-address-item">3: 398 Cầu Giấy, Q. Cầu Giấy <span class="product-still">(Còn hàng)</span></li>
+                    <li class="product-address-item">4: 42 Phố Vọng, Hai Bà Trưng <span class="product-over">(Hết hàng)</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        {{!-- product info --}}
+        <div class="product-info">
+            <div class="product-info-price-at">
+                <div>
+                    <span>Giá Tại:</span>
+                    <select>
+                        <option value="">Hà Nội</option>
+                        <option value="">Đà Nẵng</option>
+                        <option value="">TP.HCM</option>
+                    </select>
+                </div>
+                <p>
+                    <i class="far fa-check-square"></i>
+                    Còn hàng
+                </p>
+            </div>
+
+            <div class="product-info-price">
+                <h1 class="price">{{phone.price}}</h1>
+            </div>
+
+            <div class="product-info-form">
+                <p class="product-info-form-title">Chọn phiên bản để xem giá và chi nhánh còn hàng:</p>
+                <div class="product-info-form-list">
+                    <div class="product-info-form-item">
+                        <p class="product-info-form-item__title">Màu sắc</p>
+                        <div class="product-info-form-item__value">
+                            <div class="product-info-form-item__value-detail color-black"></div>
+                            <div class="product-info-form-item__value-detail color-white"></div>
+                        </div>
+                    </div>
+                    <div class="product-info-form-item">
+                        <p class="product-info-form-item__title">Bộ nhớ</p>
+                        <div class="product-info-form-item__value">
+                            <div class="product-info-form-item__value-detail">64GB</div>
+                            <div class="product-info-form-item__value-detail">256GB</div>
+                        </div>
+                    </div>
+                    <div class="product-info-form-item">
+                        <p class="product-info-form-item__title">Nguồn gốc</p>
+                        <div class="product-info-form-item__value">
+                            <div class="product-info-form-item__value-detail">HÀN QUỐC</div>
+                            <div class="product-info-form-item__value-detail">MỸ</div>
+                        </div>
+                    </div>
+                    <div class="product-info-form-item">
+                        <p class="product-info-form-item__title">Tình trạng</p>
+                        <div class="product-info-form-item__value">
+                            <div class="product-info-form-item__value-detail">95%</div>
+                            <div class="product-info-form-item__value-detail">99%</div>
+                        </div>
+                    </div>
+                    <div class="product-info-form-item">
+                        <p class="product-info-form-item__title">Gói bảo hành</p>
+                        <div class="product-info-form-item__value">
+                            <div class="product-info-form-item__value-detail">BHV 6 THÁNG</div>
+                            <div class="product-info-form-item__value-detail">BHV 12 THÁNG</div>
+                        </div>
+                    </div>
+                </div>
+                <p>Thời gian bảo hành: <span class="black">BH Thường 6 - 12 Tháng</span> <span class="detail">(Xem chi tiết)</span></p>
+                <p>Giao hàng tận nơi miễn phí trong 30 phút <span class="detail">(Tìm hiểu thêm)</span></p>
+            </div>
+
+            <div class="product-info-promotion">
+                <p>Tặng: <span>Cường lực - Ốp lưng - Tai nghe</span> khi mua BHV (Nếu trong hộp chưa có)</p>
+                <p>Giảm: <span>100K</span> áp dụng HSSV mua BHV tại <span>42 phố Vọng</span></p>
+                <p>Mua: Dán cường lực 21D full màn chỉ <span>30K</span></p>
+                <p>Giảm 100K khi mua BHV và đặt hàng tại</p>
+                <p>- Chat online: <span class="Hotline">Chat Facebook</span></p>
+                <p>- Hà Nội: <span class="Hotline">0969.120.120</span></p>
+                <p>- Tp.HCM: <span class="Hotline">0965.123.123</span></p>
+                <p>- Đà Nẵng: <span class="Hotline">096.123.9797</span></p>
+                <p>Mua SHOPEE giá Rẻ: <a href="">CLICK</a></p>
+                <h3>Khuyến mãi</h3>
+            </div>
+
+            <div class="product-info-button">
+                <p class="product-info-button__title">Hotline: 0969.120.120 (HN) | 0965.123.123 (HCM) | 096.123.9797 (ĐN)</p>
+                <div class="product-info-button__top">
+                    <button>CHAT TƯ VẤN</button>
+                    <button class="other">ĐẶT HÀNG TRƯỚC</button>
+                </div>
+                <div class="product-info-button__body">
+                    <button>
+                        <h3>MUA TRẢ GÓP 0%</h3>
+                        <p>(Duyệt HS 5 phút, Trả góp qua thẻ)</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product-similar">
+            <div class="product-similar-top">
+                <div class="product-similar-title">Sản Phẩm Tương Tự</div>
+                <div class="product-similar-list">
+                    <div class="product-similar-item">
+                        <div class="product-similar-item__img">
+                            <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2022/01/w80/realme-gt-2-pro-1.jpg" alt="">
+                        </div>
+                        <div class="product-similar-item__info">
+                            <p class="name-similar">Realme GT 2 Pro (Snapdragon 8 Gen 1)</p>
+                            <p class="price">15.450.000 ₫</p>
+                            <p><a href="">xem chi tiết</a></p>
+                        </div>
+                    </div>
+
+                    <div class="product-similar-item">
+                        <div class="product-similar-item__img">
+                            <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2021/12/w80/motorola-edge-x30-den.jpg" alt="">
+                        </div>
+                        <div class="product-similar-item__info">
+                            <p class="name-similar">Motorola Edge X30 (Snapdragon 8 Gen 1)</p>
+                            <p class="price">10.950.000 ₫</p>
+                            <p><a href="">xem chi tiết</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-similar-top">
+                <div class="product-similar-title">Phụ kiện tương tự</div>
+                <div class="product-similar-list">
+                    <div class="product-similar-item">
+                        <div class="product-similar-item__img">
+                            <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2019/11/w80/airpods-pro-rep-11-1.jpg" alt="">
+                        </div>
+                        <div class="product-similar-item__info">
+                            <p class="name-similar">Tai nghe Airpods Pro Rep 1:1 (Sạc không dây, xuyên âm)</p>
+                            <p class="price">450.000 ₫</p>
+                            <p><a href="">xem chi tiết</a></p>
+                        </div>
+                    </div>
+
+                    <div class="product-similar-item">
+                        <div class="product-similar-item__img">
+                            <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2021/12/w80/airb-pro-2.jpg" alt="Tai nghe không dây BKAV AirB Pro">
+                        </div>
+                        <div class="product-similar-item__info">
+                            <p class="name-similar">Tai nghe không dây BKAV AirB Pro</p>
+                            <p class="price">Liên hệ</p>
+                            <p><a href="">xem chi tiết</a></p>
+                        </div>
+                    </div>
+
+                    <div class="product-similar-item">
+                        <div class="product-similar-item__img">
+                            <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2021/12/w80/tai-nghe-bkav-airb-8-1.jpg" alt="Tai nghe không dây BKAV AirB">
+                        </div>
+                        <div class="product-similar-item__info">
+                            <p class="name-similar">Tai nghe không dây BKAV AirB (RẺ nhất Hà Nội)</p>
+                            <p class="price">Liên hệ</p>
+                            <p><a href="">xem chi tiết</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-detail">
+        <div class="product-detail-Specifications">
+            <h4 class="product-detail-Specifications__title">Thông Số Kỹ Thuật</h4>
+            <div class="product-detail-Specifications__content">
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Màn hình:</div>
+                    <div class="fs14">
+                        	AMOLED, 1 tỷ màu, HDR10+, 120Hz, tỷ lệ 20:9
+                            6.28 inches, Full HD+ (1080 x 2400 pixels)
+                            Corning Gorilla Glass Victus
+                            Cảm biến vân tay trong màn hình
+                    </div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Hệ điều hành:</div>
+                    <div class="fs14">Android 12, MIUI 13</div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Camera sau:</div>
+                    <div class="fs14">
+                        50 MP, f/1.9, 26mm (góc rộng), PDAF, OIS
+                        13 MP, f/2.4, 12mm, 123˚ (góc siêu rộng)
+                        5 MP, 50mm (telephoto macro), AF
+                        Quay phim: 8K@24fps (HDR10), 4K@30fps (HDR10+), 1080p@30/120/240/960fps, 720p@1920fps, gyro-EIS
+                    </div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Camera trước:</div>
+                    <div class="fs14">
+                        32 MP, 26mm (góc rộng)
+                        Quay phim: 1080p@30/60fps, 720p@120fps
+                    </div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">CPU:</div>
+                    <div class="fs14">
+                        Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm)
+                        8 nhân (1x3.00 GHz & 3x2.50 GHz & 4x1.80 GHz)
+                        GPU: Adreno 730
+                    </div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">RAM:</div>
+                    <div class="fs14">8-12GB</div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Bộ nhớ trong:</div>
+                    <div class="fs14">128-256GB, UFS 3.1</div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Thẻ SIM:</div>
+                    <div class="fs14">2 SIM, Nano SIM</div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Dung lượng pin:</div>
+                    <div class="fs14">
+                        Li-Po 4500mAh
+                        Sạc nhanh 67W, 100% trong 39ph (quảng cáo)
+                        Sạc nhanh không dây 50W, 100% trong 53ph (quảng cáo)
+                        Sạc ngược không dây 10W
+                        Power Delivery 3.0
+                        Quick Charge 4+
+                    </div>
+                </div>
+                <div class="Specifications__content-item">
+                    <div class="fw600 fs14">Thiết kế:</div>
+                    <div class="fs14">Khung kim loại + 2 mặt kính</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-detail-video">
+            <h4 class="product-detail-video__title">Video Đánh Giá & Review Xiaomi 12 (Snap 8 Gen 1)</h4>
+            <div class="product-detail-video__content">
+                <div class="product-detail-video__content-img">
+                    <img src="https://img.youtube.com/vi/vN7KWSOmQLs/0.jpg" alt="">
+                </div>
+
+                <div class="product-detail-video__content-img-list">
+                    <div class="product-detail-video__content-img-item">
+                        <span>1</span>
+                        <img src="https://img.youtube.com/vi/vN7KWSOmQLs/0.jpg" alt="">   
+                    </div>
+                    <div class="product-detail-video__content-img-item">
+                        <span>2</span>
+                        <img src="https://img.youtube.com/vi/kiMNJPS6yo4/0.jpg" alt="">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

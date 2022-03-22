@@ -1,0 +1,20 @@
+<div class="grid wide form-create">
+    <h3>Sửa sản phẩm</h3>
+    <form method="post" action="/admin/{{phone._id}}/update?_method=put">
+        <div class="form-edit">
+            <div class="form-group">
+                <label for="name">Sửa tên điện thoại</label>
+                <input type="text" class="form-control" value="{{phone.name}}" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="price">Sửa giá</label>
+                <input type="text" class="form-control" value="{{phone.price}}" id="price" name="price">
+            </div>
+            <div class="form-group">
+                <label for="type">Sửa Hãng</label>
+                <input type="text" class="form-control" value="{{phone.type}}" id="type" name="type">
+            </div>
+        </div>
+        <button type="submit" class="form-btn">Lưu lại</button>
+    </form>
+</div>
